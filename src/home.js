@@ -1,14 +1,11 @@
 
+
+const home = () =>{
 const bananaImage = "https://images.unsplash.com/photo-1608537824648-47d2592bcfd3?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=milo-bunnik-4I_LKUwq3ac-unsplash.jpg";
-const body = document.querySelector("body")
+
 const content = document.getElementById("content")
 const homeHeader = document.createElement("h2");
 
-const buttons = document.querySelectorAll("button")
-
-const homeButton = buttons[0];
-const menuButton = buttons[1];
-const aboutButton = buttons[2];
 
 
 
@@ -33,8 +30,15 @@ content.appendChild(headerDiv)
 headerDiv.appendChild(homeHeader);
 headerDiv.appendChild(homeSubHeader);
 headerDiv.appendChild(headerImage);
-content.appendChild(promoText);
-content.appendChild(contactDetails);
+headerDiv.appendChild(promoText);
+headerDiv.appendChild(contactDetails);
+
+
+return headerDiv;
+
+}
+home()
+export {home}
 
 
 
