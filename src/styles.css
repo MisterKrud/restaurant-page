@@ -11,17 +11,26 @@
 
 body{
     font-family:'Bangers', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color:rgb(252, 252, 196)
+  background-color:rgb(253, 253, 211)
 }
 nav{
     display:flex;
     justify-content: center;
 }
 
+.active{
+    background-color:  rgb(98, 126, 45);
+    color: white;
+    border: rgb(98, 126, 45);
+}
+
+
+
 #content{
     display: flex;
    flex-direction: column;
    align-items: center;
+   
   
      
 }
@@ -40,7 +49,7 @@ h2{
 
 h3{
     letter-spacing: 2px;
-    font-size: 42px;
+    font-size: 38px;
     color:rgb(104, 104, 0);
    
     text-shadow: 3px 3px rgb(212, 205, 171);
@@ -100,12 +109,19 @@ button{
 }
 
 button:hover{
-    background-color: rgb(104, 104, 0);
+    background-color:rgb(98, 126, 45);
     color: rgb(255, 255, 237);
+    border-color:yellow
+}
+
+.active:hover{
+    background-color:rgb(60, 78, 27);
+    color: white;
+    border-color: yellow;
 }
 
 button:active{
-    transform: translate(1px 2px);
+    transform: translateY(2px);
 }
 :link{
     text-decoration: none;
@@ -124,4 +140,32 @@ img{
 }
 
 
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
 
+.item-card{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 212, 212, 50%);
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    border-radius: 5px;
+    
+    
+}
+
+.item-name{
+    grid-area:1/1/2/10;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    margin-bottom: 1px;
+   
+}
+
+.item-info{
+    font-style: italic;
+}

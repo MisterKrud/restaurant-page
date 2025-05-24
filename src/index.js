@@ -13,10 +13,18 @@ console.log(buttons[2])
 homeButton.addEventListener("click", () =>{
     content.innerHTML = '';
     content.appendChild(home())
+    // buttons.forEach((button) => button.classList.remove("active"))
 })
 
 menuButton.addEventListener("click", () =>{
     content.innerHTML = '';
     content.appendChild(menu());
+//    buttons.forEach((button) => button.classList.remove("active"))
 })
 console.log("It's all up and running");
+
+
+const removeActive = (element) => {
+    element.classList.remove("active")
+
+    }
