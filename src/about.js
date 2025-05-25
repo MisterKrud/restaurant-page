@@ -22,6 +22,16 @@ storyText.innerHTML = "From humble beginnings, the banana-stand stood as a testa
 
 homeHeader.textContent = 'The Banana Stand';
 
+const quotesDiv = document.createElement("div")
+quotesDiv.setAttribute("id", "quotes-container")
+
+
+content.appendChild(homeHeader);
+content.appendChild(headline);
+content.appendChild(storyTextDiv);
+storyTextDiv.appendChild(storyText)
+content.appendChild(quotesDiv);
+
 class Quote {
     constructor(quote, name, city){
         this.quote = quote;
@@ -44,14 +54,29 @@ const quotes = [
 ];
 
 
-const quoteRandomiser = () => {
-    let n = Math.random()
-}
+let quoteArray = []
+let n;
+const quoteNumberRandomiser = () =>  n = Math.floor((Math.random() * quotes.length) +1);
+const featuredQuotes = []
+const quoteCreator = (() => {
+    for (let i = 0; i<3; i++) {
+        quoteNumberRandomiser()
+    quoteArray = quotes.splice(n,1)
+    
+    featuredQuotes.push(quoteArray[0])
+    console.log(featuredQuotes[i].quote)
+    let featuredQuote = document.createElement("div");
+    featuredQuote.setAttribute("class", "featured-quote");
+    featuredQuote.innerHTML = `<p>${featuredQuotes[i].quote}</p><p>${featuredQuotes[i].name} - ${featuredQuotes[i].city}</p>` //I'm getting an error here because 'quote' is undefined
+    quotesDiv.appendChild(featuredQuote);
+    }
+})();
 
-content.appendChild(homeHeader);
-content.appendChild(headline);
-content.appendChild(storyTextDiv);
-storyTextDiv.appendChild(storyText)
+
+
+
+
+
 
 
 
