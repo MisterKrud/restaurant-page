@@ -28,7 +28,7 @@ promoText.setAttribute("id", "promo-text")
 promoText.innerHTML = "<h3>Slip on over anytime</h3><h4>Split when you're ready</h4><p><em>Check out our menu (above) for a sensational selection of tasty treats<em></p>"
 const contactDetails = document.createElement("div");
 contactDetails.setAttribute("id","contact-details")
-contactDetails.innerHTML = "<p><em>Dietary requirments? Questions? Need answers?</em></p><p><span><strong>Phone: </strong></span>(00) 111 222 33 44</p><p><span><strong>email: </strong></span><href = 'mailto:fake@emailaddress.ooops'>info@thebananastand.bna</p>"
+contactDetails.innerHTML = "<hr /><p><em>Dietary requirments? Questions? Need answers?</em></p><p><span><strong>Phone: </strong></span>(00) 111 222 33 44</p><p><span><strong>email: </strong></span><href = 'mailto:fake@emailaddress.ooops'>info@thebananastand.bna</p><hr/>"
 
 
 content.appendChild(headerDiv)

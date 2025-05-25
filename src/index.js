@@ -1,6 +1,7 @@
 import  "./styles.css"
 import { home } from "./home.js"  
 import { menu } from "./menu.js"
+import { about } from "./about.js"
 
 
 const buttons = document.querySelectorAll("button")
@@ -13,18 +14,20 @@ console.log(buttons[2])
 homeButton.addEventListener("click", () =>{
     content.innerHTML = '';
     content.appendChild(home())
-    // buttons.forEach((button) => button.classList.remove("active"))
+   
 })
 
 menuButton.addEventListener("click", () =>{
     content.innerHTML = '';
     content.appendChild(menu());
-//    buttons.forEach((button) => button.classList.remove("active"))
+
+})
+
+
+aboutButton.addEventListener("click", () => {
+    content.innerHTML = '';
+    content.appendChild(about());
 })
 console.log("It's all up and running");
 
 
-const removeActive = (element) => {
-    element.classList.remove("active")
-
-    }

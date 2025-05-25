@@ -56,7 +56,7 @@ class MenuItem {
 
 const menuItems = [
     new MenuItem("Elvis Sandwich", "Bacon, banana & peanut butter on white bread", "Lunch", 18),
-    new MenuItem("Crispy banana fritters", "Indonesian style banana fritters cooked in sesame batter", "Dessert",  "Lunch", 22),
+    new MenuItem("Crispy banana fritters", "Indonesian style banana fritters cooked in sesame batter", "Dessert", 22),
     new MenuItem("Upside-down banana cake", "With maple-caramel sauce", "Dessert", 18),
     new MenuItem("Banana Ice Cream", "Ice cream made with ripe bananas and milk, chocolate and tahini", "Dessert", 20),
     new MenuItem("Banana Bread", "Toasted with butter", "Breakfast", 12),
